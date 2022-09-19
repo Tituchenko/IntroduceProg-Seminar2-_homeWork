@@ -16,7 +16,7 @@ Console.WriteLine ($"Вторая цифра числа {num} = {secNum}");
 //78 -> третьей цифры нет
 
 //32679 -> 6
-/*
+
 Console.Write ("Введите число: ");
 int num=int.Parse(Console.ReadLine());
 if (num<100)
@@ -28,7 +28,7 @@ else
     //Вычислим cколько цифр в принципе в числе, больше 3 уже точно, сколько его еще раз можем /10 и будет > 10 
     int ostatok=num/100;
     int count=3;
-    while (ostatok>10)
+    while (ostatok>9)
     {
         ostatok=ostatok/10;
         count++;
@@ -38,13 +38,13 @@ else
     int thirdNum=num/(Convert.ToInt32(Math.Pow(10, count-3)))%10;
     Console.WriteLine ($"Третья цифра в числе {num} = {thirdNum}");
 }
-*/
+
 //Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
 //6 -> да
 //7 -> да
 //1 -> нет
-
+/*
 Console.Write ("Введите цифру дня недели: ");
 int num=int.Parse(Console.ReadLine());
 if ((num>0) && (num<8)) //на всякий случай
@@ -62,3 +62,4 @@ else
 {
     Console.WriteLine ("Нет такого дня недели");
 }
+*/
